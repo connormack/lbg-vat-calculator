@@ -13,7 +13,7 @@ pipeline {
         scannerHome = tool 'sonarqube'
       }
         steps {
-            withSonarQubeEnv('SQ-Jenkins-Test') {        
+            withSonarQubeEnv('sonar-qube1') {        
               sh "${scannerHome}/bin/sonar-scanner"
             }   
         }
